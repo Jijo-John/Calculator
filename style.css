@@ -1,0 +1,159 @@
+
+        * {
+
+padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Default Design */
+.gfg-div {
+
+/* To make all elements center */
+display: flex;
+justify-content: center;
+align-items: center;
+
+/* Default Styling */
+margin: 20px auto;
+padding: 30px;
+font-size: 30px;
+width: 300px;
+height: 300px;
+background-color: darkseagreen;
+color: black;
+}
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+
+
+
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px)
+and (orientation: landscape) {
+
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+
+}
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px) and (device-width: 320px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px) and (min-device-width: 375px)
+and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+
+
+
+
+
+
+#app {
+    background-color: #272931;
+    width: 375px;
+    /*height: 667px;*/
+    
+}
+
+#container {
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+
+}
+
+#results {
+    width: 100%;
+    height: 200.1px;
+}
+ #calc {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    text-align: right;
+    padding-right: 1.5rem;
+    color: #fff;
+ }
+
+ #result {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    text-align: right;
+    padding-right: 1.5rem;
+    color: #fff;
+ }
+
+#numpad {
+
+    width: 100%;
+    height: 400.2px;
+    
+
+}
+
+button {
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  color: #fff;
+  background-color: #6200ee;
+  padding: 1rem 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  outline: 0;
+  border: 0;
+  /*border-radius: 0.25rem;*/
+  /*box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); /* black with 30% opacity */
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+    
+    
